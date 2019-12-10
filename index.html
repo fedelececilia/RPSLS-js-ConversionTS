@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale-1.0" />
+  <title> Piedra Papel Tijera Lagarto Spock</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <div id="titulos" class="titulos">
+    <ul id="names">
+      <li> Piedra</li>
+      <li> Papel</li>
+      <li> Tijera</li>
+      <li> Lagarto</li>
+      <li> Spock</li>
+    </ul>
+  </div>
+  <ul id="choices">
+    <li id="Piedra" onclick="game(this)">
+      <img src="images/rock.png" alt="piedra" />
+    </li>
+    <li id="Papel" onclick="game(this)">
+      <img src="images/paper.png" alt="papel" />
+    </li>
+    <li id="Tijera" onclick="game(this)">
+      <img src="images/scissor.png" alt="tijera" />
+    </li>
+    <li id="Lagarto" onclick="game(this)">
+      <img src="images/lizard.png" alt="lagarto" />
+    </li>
+    <li id="Spock" onclick="game(this)">
+      <img src="images/spock.png" alt="spock" />
+    </li>
+  </ul>
+
+
+  <p>Selecciona una figura para comenzar!<br><span></span></p>
+  <ul id="scores">
+    <li id="user">
+      <span class="icon-user"></span>
+      <ul id="lives">
+        <li><span class="icon-heart"></span></li>
+        <li><span class="icon-heart"></span></li>
+        <li><span class="icon-heart"></span></li>
+      </ul>
+    </li>
+    <li id="bot">
+      <span class="icon-android"></span>
+      <ul id="lives">
+        <li><span class="icon-heart"></span></li>
+        <li><span class="icon-heart"></span></li>
+        <li><span class="icon-heart"></span></li>
+      </ul>
+    </li>
+  </ul>
+  <script src="dist/script.js"></script>
+</body>
+
+</html>

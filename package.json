@@ -1,0 +1,32 @@
+{
+  "name": "rpsls",
+  "version": "1.0.0",
+  "description": "Rock, Paper, Scissors, Lizard, Spock (RPSLS) is a variant of the all time famous game [Rock, Paper, Scissors](http://en.wikipedia.org/wiki/Rock-paper-scissors). It was introduced in TV-Series [The Big Bang Theory](https://en.wikipedia.org/wiki/The_Big_Bang_Theory). According to Sheldon(the character introduces this game in The Big Bang Theory), adding two more options reduces the probability that the game will result in a tie.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register tests/test.ts",
+    "coverage": "nyc -r lcov -e .ts -x \"*.test.ts\" npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhigyank/RPSLS-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhigyank/RPSLS-js/issues"
+  },
+  "homepage": "https://github.com/abhigyank/RPSLS-js#readme",
+  "dependencies": {
+    "ts-mocha": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.6",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "jest": "^24.9.0",
+    "mocha": "^6.2.2",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.3"
+  }
+}
